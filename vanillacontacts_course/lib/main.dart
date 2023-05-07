@@ -31,7 +31,7 @@ class ContactBook extends ValueNotifier<List<Contact>> {
   static final ContactBook _shared = ContactBook._sharedInstance();
   factory ContactBook() => _shared;
 
-  final List<Contact> _contacts = [];
+  // final List<Contact> _contacts = [];
 
   // int get length => _contacts.length;
   // `value` came from ValueNotifier
@@ -62,7 +62,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final contactBook = ContactBook();
+    // final contactBook = ContactBook();
     return Scaffold(
       appBar: AppBar(
         title: const Text('Home Page'),
